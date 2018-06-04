@@ -14,7 +14,7 @@ import { Home } from './components/Pages';
 /**
  * CSS imports
  */
-import './styles/main';
+import './styles/main.css';
 
 /**
  * import service worker
@@ -30,8 +30,8 @@ const router = (
   <BrowserRouter onUpdate={onUpdate}>
     <Layout>
       <Switch>
-        {/* Routes go here */}
         <Route exact path="/" component={Home} />
+        {/* <Route exact path="/contact" component={Contact} /> */}
       </Switch>
     </Layout>
   </BrowserRouter>
